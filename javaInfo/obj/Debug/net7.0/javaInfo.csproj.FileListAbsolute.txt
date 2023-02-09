@@ -1,0 +1,15 @@
+D:\RiderProject\javaInfo\javaInfo\bin\Debug\net7.0\javaInfo.exe
+D:\RiderProject\javaInfo\javaInfo\bin\Debug\net7.0\javaInfo.deps.json
+D:\RiderProject\javaInfo\javaInfo\bin\Debug\net7.0\javaInfo.runtimeconfig.json
+D:\RiderProject\javaInfo\javaInfo\bin\Debug\net7.0\javaInfo.dll
+D:\RiderProject\javaInfo\javaInfo\bin\Debug\net7.0\javaInfo.pdb
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.csproj.AssemblyReference.cache
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.AssemblyInfoInputs.cache
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.AssemblyInfo.cs
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.csproj.CoreCompileInputs.cache
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.dll
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\refint\javaInfo.dll
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.pdb
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\javaInfo.genruntimeconfig.cache
+D:\RiderProject\javaInfo\javaInfo\obj\Debug\net7.0\ref\javaInfo.dll
