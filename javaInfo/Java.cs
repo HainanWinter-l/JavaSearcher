@@ -94,11 +94,11 @@ public class JavaInfo
     /// <returns></returns>
     private static HashSet<Java> MacJavas()
     {
-        const string javaHomePath =  "/Library/Java/JavaVirtualMachines/";
+        const string javaHomePath =  "/Library/Java/JavaVirtualMachines";
         var javas = new HashSet<Java>();
         foreach (var i in Directory.GetDirectories(javaHomePath))
         {
-            if (!File.Exists(i+"Contents/Home/bin"))
+            if (!Directory.Exists(i+"Contents/Home/bin"))
                 continue;
             javas.Add(new Java(i + "Contents/Home/bin/java"));
         }
