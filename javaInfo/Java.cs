@@ -94,13 +94,13 @@ public class JavaInfo
     /// <returns></returns>
     private static HashSet<Java> MacJavas()
     {
-        const string javaHomePath =  "/Library/Java/JavaVirtualMachines/";
+        const string javaHomePath =  "/Library/Java/JavaVirtualMachines";
         var javas = new HashSet<Java>();
         foreach (var i in Directory.GetDirectories(javaHomePath))
         {
-            if (!File.Exists(i+"Contents/Home/bin"))
+            if (!Directory.Exists(i + "/Contents/Home/bin"))
                 continue;
-            javas.Add(new Java(i + "Contents/Home/bin/java"));
+            javas.Add(new Java(i + "/Contents/Home/bin/java"));
         }
         return javas;
     }
@@ -223,7 +223,7 @@ public class JavaInfo
             var sr = new StreamReader(Path.GetFullPath(path));
             return ReadRelease(sr,path);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             return "Cannot Open Release File!";
         }
@@ -329,7 +329,6 @@ public class JavaInfo
     /// <returns></returns>
     public static HashSet<Java> FindJava()
     {
-        //return SearchJava();
         return SetJavaVersion(SearchJava());
     }
-}
+} 
