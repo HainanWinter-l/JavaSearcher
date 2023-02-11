@@ -6,6 +6,6 @@
 | ------- | ------ |
 | Windows | [ x ]  |
 | Linux   | [ x ]  |
-| MacOS   | [    ] |
+| MacOS   | [ x ]  |
 
 
