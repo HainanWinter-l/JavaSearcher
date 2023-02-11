@@ -4,8 +4,8 @@
 
 | 操作系统    | 支持     |
 | ------- | ------ |
-| Windows | [ x ]  |
-| Linux   | [ x ]  |
-| MacOS   | [ x ]  |
+| Windows | [ ✔ ]  |
+| Linux   | [ ✔ ]  |
+| MacOS   | [ ✔ ]  |
 
 
