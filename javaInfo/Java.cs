@@ -132,8 +132,8 @@ public class JavaInfo
         //opensuse系 包管理器为 zypper
         if (File.Exists(binPath + "zypper"))
             return OpensuseJavas(Directory.GetDirectories(jvmDirectory));
-        //其他系，难精确查找，仅返回环境变量中的java路径
-        return RunProcess("which", "java");
+        //其他系，难精确查找，尝试进行查找
+        return OtherLinuxJavas();
     }
     
     /// <summary>
@@ -202,6 +202,29 @@ public class JavaInfo
         {
             if (i.Contains("jre"))
                 continue;
+            if (Directory.Exists(i+"/bin"))
+                javas.Add(new Java(i + "/bin/java"));
+        }
+        return javas;
+    }
+    
+    /// <summary>
+    /// ### 其他Linux发行版的 的Java查询
+    /// </summary>
+    /// <param name="javaRootPaths"></param>
+    /// <returns></returns>
+    private static HashSet<Java> OtherLinuxJavas()
+    {
+        HashSet<Java> javas = new();
+        string javaRootPath = string.Empty;
+        if (Directory.Exists("/usr/lib/jvm"))
+            javaRootPath = "/usr/lib/jvm";
+        else if (Directory.Exists("/usr/lib32/jvm"))
+            javaRootPath = "/usr/lib32/jvm";
+        else
+            javaRootPath = "/usr/lib64/jvm";
+        foreach (var i in Directory.GetDirectories(javaRootPath))
+        {
             if (Directory.Exists(i+"/bin"))
                 javas.Add(new Java(i + "/bin/java"));
         }
